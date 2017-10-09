@@ -464,7 +464,7 @@
         <div id="u190_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u191" class="text" style="visibility: visible;">
-          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">生成券的链接应该包含以下几个属性：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">券的类型：金额/时长</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">面额：10元/4小时</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">可用日期：当日</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">总可领次数：999999</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">每个用户可领次数：考虑这个点，如果商户控制的话，限定当日有效，即使拍照没在场也无法抵扣；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">openid：限制二维码领取的唯一性</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">所属停车场：parkid</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">所属商户：直接在记录当中加入商户在1.0集团管理平台的商户id，方便之后筛选记录显示，统计的需要</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">生成券的链接应该包含以下几个属性：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">券的类型：金额/时长</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">面额：10元/4小时</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">可用日期：当日，若日期为空则不做该限制</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">总可领次数：999999</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">已领取次数：10000</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">剩余可领取次数：2000</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">每个用户可领次数：考虑这个点，如果商户控制的话，限定当日有效，即使拍照没在场也无法抵扣；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">openid：限制二维码领取的唯一性</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">是否可重复领取：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">若有当日限制，则可重复或部重复领取；</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">若无当日限制，则可以重复领取；主要考虑先付费或后付费，需要总次数的限制</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">所属停车场：parkid</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">所属商户：直接在记录当中加入商户在1.0集团管理平台的商户id，方便之后筛选记录显示，统计的需要</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
         </div>
       </div>
 
@@ -691,7 +691,7 @@
         <div id="u239_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u240" class="text" style="visibility: visible;">
-          <p><span>领取抵扣的时候，</span></p><p><span>需要判断车辆是否在停车场内，在停车场内的车辆才可以执行抵扣，不在场内的车辆无法执行抵扣，弹窗提示用户；</span></p><p><span><br></span></p><p><span>车辆可能存在多条未支付的订单，取进场时间最新的一条数据进行抵扣，且</span><span style="color:#FF0000;">必须带入对应的停车场id进行筛选，保证筛选的数据无误</span><span>；</span></p><p><span><br></span></p><p><span>关于抵扣，提供一个关于停车费用抵扣的接口，传入停车场、车牌、抵扣类型</span><span style="color:#FF0000;">（时长、次数调用不同的方法写入抵扣金额）</span><span>等参数，查找在数据库中进场时间最近的一条临停数据订单进行抵扣，具体金额抵扣和时长抵扣的方法见原来的平台代码；</span></p>
+          <p><span>领取抵扣的时候，</span></p><p><span>需要判断车辆是否在停车场内，在停车场内的车辆才可以执行抵扣，不在场内的车辆无法执行抵扣，弹窗提示用户；</span></p><p><span><br></span></p><p><span>车辆可能存在多条未支付的订单，取进场时间最新的一条数据进行抵扣，且</span><span style="color:#FF0000;">必须带入对应的停车场id进行筛选，保证筛选的数据无误</span><span>；</span></p><p><span><br></span></p><p><span>关于抵扣，提供一个关于停车费用抵扣的接口，传入停车场、车牌、抵扣类型</span><span style="color:#FF0000;">（时长、次数调用不同的方法写入抵扣金额）</span><span>等参数，查找在数据库中进场时间最近的一条临停数据订单进行抵扣，具体金额抵扣和时长抵扣的方法见原来的平台代码；</span></p><p><span><br></span></p><p><span style="color:#FF0000;">若在二维码中新增了发放总数，已发放数，剩余可发放数，</span></p><p><span style="color:#FF0000;">则在用户领取的时候，也需要加上这层判断，是否剩余可发放数为0，若为零，则提示“该停车券已领用完，无法继续领取”；</span></p><p><span style="color:#FF0000;">若未领取完，则继续领取；</span></p><p><span style="color:#FF0000;">领取后，需在优惠券表的已领取数中+1；剩余可领取数中-1；</span></p>
         </div>
       </div>
 
@@ -835,6 +835,55 @@
         <img id="u269_seg5" class="img " src="images/车主输入车牌号抵扣/u269_seg5.png" alt="u269_seg5"/>
         <!-- Unnamed () -->
         <div id="u270" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u271" class="ax_default box_3">
+        <div id="u271_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u272" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u273" class="ax_default line">
+        <img id="u273_img" class="img " src="images/车主输入车牌号抵扣/u194.png"/>
+        <!-- Unnamed () -->
+        <div id="u274" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u275" class="ax_default label">
+        <div id="u275_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u276" class="text" style="visibility: visible;">
+          <p><span>好的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u277" class="ax_default label">
+        <div id="u277_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u278" class="text" style="visibility: visible;">
+          <p><span>该停车券已领取完毕，</span></p><p><span>无法继续领用，详情</span></p><p><span>可咨询商家</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u279" class="ax_default connector">
+        <img id="u279_seg0" class="img " src="images/车主输入车牌号抵扣/u279_seg0.png" alt="u279_seg0"/>
+        <img id="u279_seg1" class="img " src="images/车主输入车牌号抵扣/u279_seg1.png" alt="u279_seg1"/>
+        <img id="u279_seg2" class="img " src="images/车主输入车牌号抵扣/u279_seg2.png" alt="u279_seg2"/>
+        <img id="u279_seg3" class="img " src="images/车主输入车牌号抵扣/u279_seg3.png" alt="u279_seg3"/>
+        <img id="u279_seg4" class="img " src="images/车主输入车牌号抵扣/u279_seg4.png" alt="u279_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u280" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
         </div>
       </div>
