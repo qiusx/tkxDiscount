@@ -17,7 +17,7 @@
   left:0px;
   top:0px;
   width:917px;
-  height:1555px;
+  height:1745px;
   background:inherit;
   background-color:rgba(255, 255, 255, 1);
   box-sizing:border-box;
@@ -34,12 +34,12 @@
   left:1880px;
   top:205px;
   width:917px;
-  height:1555px;
+  height:1745px;
 }
 #u98 {
   position:absolute;
   left:2px;
-  top:770px;
+  top:864px;
   width:913px;
   visibility:hidden;
   word-wrap:break-word;
@@ -3641,6 +3641,76 @@
   position:absolute;
   left:8px;
   top:-8px;
+  width:100px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u342_div {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:156px;
+  height:94px;
+  background:-webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 0%, rgba(228, 228, 228, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  background:-moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 0%, rgba(228, 228, 228, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  background:linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 0%, rgba(228, 228, 228, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  box-sizing:border-box;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+}
+#u342 {
+  position:absolute;
+  left:2180px;
+  top:1826px;
+  width:156px;
+  height:94px;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+}
+#u343 {
+  position:absolute;
+  left:2px;
+  top:5px;
+  width:152px;
+  word-wrap:break-word;
+}
+#u344 {
+  position:absolute;
+  left:2258px;
+  top:1730px;
+  width:0px;
+  height:0px;
+  font-size:16px;
+}
+#u344_seg0 {
+  position:absolute;
+  left:-4px;
+  top:0px;
+  width:8px;
+  height:100px;
+}
+#u344_seg1 {
+  position:absolute;
+  left:-10px;
+  top:82px;
+  width:20px;
+  height:21px;
+}
+#u345 {
+  position:absolute;
+  left:-50px;
+  top:40px;
   width:100px;
   visibility:hidden;
   word-wrap:break-word;
